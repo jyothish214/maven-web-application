@@ -15,7 +15,7 @@ stage ('checkout') {
         
                 sh "${mvnhome}/bin/mvn sonar:sonar"
                        }
-                           
+}  
   stage ('Uploadbuild into Nexus remote')  { 
        
                      sh "${mvnhome}/bin/mvn deploy"
